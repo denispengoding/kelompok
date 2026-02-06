@@ -1,11 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rachell</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
-<body>
+
+<body class="font-sans text-gray-800 bg-gray-100">
+
+<!-- NAVBAR -->
+<header class="sticky top-0 z-50 backdrop-blur bg-red-900/90">
+  <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4 text-white">
+
+    <!-- LOGO -->
+    <div class="text-2xl font-bold tracking-wide">Horse Store</div>
+
+    <!-- BUTTON MOBILE -->
+    <button id="menu-btn" class="md:hidden">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+
+    <!-- MENU DESKTOP -->
+    <ul class="hidden md:flex gap-6">
+      <li><a href="#hero" class="hover:text-blue-400 transition">Home</a></li>
+      <li><a href="#penjualan" class="hover:text-blue-400 transition">Shop</a></li>
+      <li><a href="#kontak" class="hover:text-blue-400 transition">Kontak</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- MENU MOBILE -->
+  <div id="menu" class="hidden md:hidden bg-slate-800 px-6 pb-4 text-white">
+  <ul class="flex flex-col gap-4 text-right">
+    <li><a href="#hero" class="hover:text-blue-400 transition">Home</a></li>
+    <li><a href="#penjualan" class="hover:text-blue-400 transition">Shop</a></li> 
+    <li><a href="#kontak" class="hover:text-blue-400 transition">kontak</a></li>
     
+  </ul>
+</div>
+</header>
+<!-- HERO -->
+<section
+  id="hero"
+  class="relative h-[85vh] bg-[url('img/kuda.jpg')] bg-cover bg-center flex items-center justify-center"
+>
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <div class="relative text-center px-4 max-w-3xl">
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+      Selamat Datang Di <span class="text-red-400">Horse Store</span>
+    </h1>
+    <p class="text-gray-200 text-lg mb-8">
+    </p>
+    </div>
+</section>
+</div>
+
+<!-- Penjualan -->
+<section id="penjualan" class="px-6 py-16 bg-gray-100">
+    <h2 class="text-3xl font-bold text-center mb-10">Penjualan</h2>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-xl shadow overflow-hidden trasition hover:shadow-xl hover:-translate-y-1">
+        <img src="img/kuda1.jpg" alt="Sneakers Store Website" class="w-full h-45 object-cover">
+
+        <div class="p-6">
+          <h3 class="text-xl text-green-600 font-semibold mb-2">Rp500.000.000</h3>
+          <p class="text-gray-600 mb-3">Kuda Pilihan Berkualitas
+Setiap kuda kami dipilih dengan standar tinggi, sehat, terawat, dan memiliki postur yang kuat untuk berbagai kebutuhan.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow overflow-hidden trasition hover:shadow-xl hover:-translate-y-1">
+        <img src="img/kuda2.jpg" alt="Company Profile Website" class="w-full h-45 object-cover">
+
+        <div class="p-6">
+          <h3 class="text-xl text-green-600 font-semibold mb-2">Rp1.000.000.000</h3>
+          <p class="text-gray-600 mb-3">Sehat & Terlatih
+Kuda telah melalui perawatan rutin dan pelatihan dasar sehingga siap digunakan untuk berkuda maupun kompetisi.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow overflow-hidden trasition hover:shadow-xl hover:-translate-y-1">
+        <img src="img/kuda3.jpg" alt="Company Profile Website" class="w-full h-45 object-cover">
+
+        <div class="p-6">
+          <h3 class="text-xl text-green-600 font-semibold mb-2">Rp750.000.000</h3>
+          <p class="text-gray-600 mb-3">Berbagai Jenis & Usia
+Tersedia kuda dari berbagai ras, usia, dan karakter, sesuai untuk pemula hingga profesional.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow overflow-hidden trasition hover:shadow-xl hover:-translate-y-1">
+        <img src="img/kuda4.jpg" alt="Company Profile Website" class="w-full h-45 object-cover">
+
+        <div class="p-6">
+          <h3 class="text-xl text-green-600 font-semibold mb-2">Rp950.000.000</h3>
+          <p class="text-gray-600 mb-3">Perawatan Profesional
+Kesehatan kuda menjadi prioritas kami, didukung oleh perawatan berkala dan pengawasan tenaga ahli.</p>
+        </div>
+    </div>
+    <div class="bg-white rounded-xl shadow overflow-hidden trasition hover:shadow-xl hover:-translate-y-1">
+        <img src="img/kuda5.jpg" alt="Company Profile Website" class="w-full h-45 object-cover">
+
+        <div class="p-6">
+          <h3 class="text-xl text-green-600 font-semibold mb-2">Rp750.000.000</h3>
+          <p class="text-gray-600 mb-3">Harga Transparan & Kompetitif
+Kami menawarkan harga yang jujur dan sebanding dengan kualitas kuda yang Anda dapatkan.</p>
+        </div>
+    </div>
+    <div class="bg-white rounded-xl shadow overflow-hidden trasition hover:shadow-xl hover:-translate-y-1">
+        <img src="img/kuda6.jpg" alt="Company Profile Website" class="w-full h-45 object-cover">
+
+        <div class="p-6">
+          <h3 class="text-xl text-green-600 font-semibold mb-2">Rp750.000.000</h3>
+          <p class="text-gray-600 mb-3">Pengiriman Aman & Terpercaya
+Proses pengiriman dilakukan dengan aman dan nyaman agar kuda tiba di lokasi dengan kondisi terbaik..</p>
+        </div>
+    </div>
+</section>
+<!-- FOOTER -->
+<footer class="bg-red-900 backdrop-blur text-white py-8">
+  <div class="flex flex-col items-center gap-4">
+    
+    <h3 class="text-lg font-semibold">Hubungi Kami</h3>
+
+    <div class="flex gap-8 text-3xl">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/sisilaindenis_"
+         target="_blank"
+         class="hover:text-pink-400 transition duration-300">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/6281380821557"
+         target="_blank"
+         class="hover:text-green-400 transition duration-300">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <p class="text-sm text-gray-400 mt-2">
+      © 2026 Shop, Kelompok 7
+    </p>
+
+  </div>
+</footer>
+
+
 </body>
 </html>
