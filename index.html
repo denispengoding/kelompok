@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas Kelompok</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rachell</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
-<body>
+
+<body class="font-sans text-gray-800 bg-gray-100">
+
+<!-- NAVBAR -->
+<header class="sticky top-0 z-50 backdrop-blur bg-red-900/90">
+  <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4 text-white">
+
+    <!-- LOGO -->
+    <div class="text-2xl font-bold tracking-wide">Horse Store</div>
+
+    <!-- BUTTON MOBILE -->
+    <button id="menu-btn" class="md:hidden">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+
+    <!-- MENU DESKTOP -->
+    <ul class="hidden md:flex gap-6">
+      <li><a href="#hero" class="hover:text-blue-400 transition">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-400 transition">About Us</a></li>
+      <li><a href="#kontak" class="hover:text-blue-400 transition">Kontak</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- MENU MOBILE -->
+  <div id="menu" class="hidden md:hidden bg-slate-800 px-6 pb-4 text-white">
+  <ul class="flex flex-col gap-4 text-right">
+    <li><a href="#hero" class="hover:text-blue-400 transition">Home</a></li>
+    <li><a href="about" class="hover:text-blue-400 transition">About Us</a></li> 
+    <li><a href="#kontak" class="hover:text-blue-400 transition">kontak</a></li>
     
+  </ul>
+</div>
+</header>
 </body>
 </html>
